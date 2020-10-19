@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -101,35 +102,165 @@ input, select {
   vertical-align: middle;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.header {
   height: 75px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Hiragino Kaku Gothic Pro W3";
 }
 
-header img {
-  display: inline-block;
+.header > img {
+  display: block;
   width: 128px;
-  height: 44px;
+  height: 45px;
+  margin-top: 14px;
+  margin-right: 5px;
 }
 
-header p {
-  display: inline-block;
-  vertical-align: middle;
+.header > p {
+  display: block;
+  margin-top: 35px;
   font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
   color: #333333;
 }
 
-header a {
-  display: inline-block;
-  margin-top: 15px;
+.header > a {
+  display: block;
+  margin-top: 16px;
+  margin-left: auto;
   text-align: center;
-  background-color: #DB6B64;
-  width: 265px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 20px;
+  background-color: #db6B64;
+  width: 318px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 25px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.header > a:hover {
+  background-color: #d84940;
+}
+
+.header > div {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  height: 500px;
+  width: 100%;
+  margin-top: 75px;
+  padding-top: 95px;
+  background-image: url("../image/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero p {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.hero img {
+  width: 317px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+}
+
+.schedule {
+  height: 602px;
+  width: 100%;
+  background-color: #ebb94d;
+  text-align: center;
+  color: white;
+  font-family: "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  padding: 30px 0;
+}
+
+.schedule span {
+  display: inline-block;
+  font-family: "Menlo";
+  color: #c7254e;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  padding: 2px 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.schedule a {
+  display: block;
+  margin: 45px auto;
+  font-size: 28px;
+  color: white;
+  line-height: 104px;
+  letter-spacing: 1.5px;
+  width: 84%;
+  max-width: 1028px;
+  height: 104px;
+  border-radius: 50px;
+  background-color: #db6B64;
+}
+
+.schedule a:hover {
+  background-color: #d84940;
+}
+
+.schedule .brsp {
+  display: none;
+}
+
+.schedule p:not(:first-child) {
+  margin-top: 23px;
+  margin-bottom: 33px;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+}
+
+.schedule .sns {
+  margin-top: 28px;
 }
 /*# sourceMappingURL=style.css.map */

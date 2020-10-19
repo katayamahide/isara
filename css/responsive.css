@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@media (max-width: 1190px) {
+  .header {
+    width: calc(100% - 20px);
+  }
+  .header > p {
+    margin-top: 36px;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .header > a {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    width: 261px;
+    height: 41px;
+    line-height: 41px;
+  }
+  .hero {
+    padding-top: 105px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+  .hero h1 {
+    font-size: 16px;
+  }
+  .schedule {
+    height: 461px;
+    font-size: 16px;
+  }
+  .schedule span {
+    font-size: 14px;
+  }
+  .schedule a {
+    margin: 0 auto;
+    height: 77px;
+    line-height: 77px;
+    font-size: 18px;
+  }
+  .schedule p:not(:first-child) {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 62px;
+    width: 100%;
+  }
+  .header > img {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 90px;
+    height: auto;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .header > p {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    margin-top: 0px;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .header > a {
+    display: none;
+  }
+  .header > div {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-left: auto;
+    padding: 9px 11px;
+    width: 76px;
+    height: 62px;
+    background-color: #DB6B64;
+    text-align: center;
+  }
+  .header > div > img {
+    width: 20px;
+  }
+  .header > div > a {
+    display: block;
+    font-family: "ヒラギノ角ゴ Pro W3";
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.6;
+    letter-spacing: 1.5;
+  }
+  .hero {
+    margin-top: 62px;
+    height: 312px;
+    background-image: url("../image/mainsp.jpg");
+    padding-top: 18px;
+  }
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .hero img {
+    width: 317px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 38px;
+  }
+  .hero h1 {
+    font-size: 15px;
+  }
+  .schedule {
+    height: 510px;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .schedule span {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  .schedule a {
+    margin: 27px auto 10px;
+    width: 90%;
+    height: 93px;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 16px;
+  }
+  .schedule .brsp {
+    display: block;
+  }
+  .schedule p:not(:first-child) {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
