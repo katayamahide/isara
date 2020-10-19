@@ -111,63 +111,60 @@ input, select {
 }
 
 // ヘッダー
-header {
+.header {
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 10;
-  background-color: #ffffff;
-}
-.header {
-  height: 75px;
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  font-family: "Hiragino Kaku Gothic Pro W3";
-
-  > img {
+  background-color: $bgc-color01;
+  &-inner {
+    height: 75px;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-family: "Hiragino Kaku Gothic Pro W3";
+  }
+  &-logo {
     display: block;
     width: 128px;
     height: 45px;
     margin-top: 14px;
     margin-right: 5px;
   }
-
-  > p {
+  &-subtitle {
     display: block;
     margin-top: 35px;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.6;
     letter-spacing: 1.5px;
-    color: $text-color;
+    color: $font-color01;
   }
-  
-  > a {
+  &-btn {
     display: block;
     margin-top: 16px;
     margin-left: auto;
     text-align: center;
-    background-color: $btn-color;
+    background-color: $btn-color01;
     width: 318px;
     height: 44px;
     line-height: 44px;
     border-radius: 25px;
-    color: white;
+    color: $bgc-color01;
     font-size: 14px;
     letter-spacing: 1.5px;
     &:hover {
-      background-color: $btn-hover-color;
+        background-color: $btn-color01;
+    }
+    &-sp {
+      display: none;
     }
   }
-  > div {
-    display: none;
-  }
 }
-
-// ヒーロー
+        
+//  ヒーロー
 .hero {
   text-align: center;
   height: 500px;
@@ -180,14 +177,13 @@ header {
     size: cover;
     position: center;
   }
-
   p {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
     line-height: 1.6;
-    color: $text-color;
+    color: $font-color01;
   }
 
   img {
@@ -198,21 +194,20 @@ header {
   h1 {
     font-size: 20px;
     font-weight: 600;
-    color: $text-color;
+    color: $font-color01;
     line-height: 1.1;
     letter-spacing: 1.5px;
   }
-
 }
 
 // スケジュール
 .schedule {
   height: 602px;
   width: 100%;
-  background-color: $bg-color;
+  background-color: $bgc-color02;
   text-align: center;
-  color: white;
-  font-family: "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+  color: $font-color03;
+  font-family: $font-jp;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
@@ -239,16 +234,16 @@ header {
     display: block;
     margin: 45px auto;
     font-size: 28px;
-    color: #ffffff;
+    color: $font-color03;
     line-height: 104px;
     letter-spacing: 1.5px;
     width: 84%;
     max-width: 1028px;
     height: 104px;
     border-radius: 50px;
-    background-color: $btn-color;
+    background-color: $btn-color01;
     &:hover {
-      background-color: $btn-hover-color;
+      background-color: $btn-color02;
     }
   }
 
@@ -267,5 +262,4 @@ header {
   .sns {
     margin-top: 28px;
   }
-
 }

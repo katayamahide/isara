@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @media (max-width: 1190px) {
-  .header {
+  .header-inner {
     width: calc(100% - 20px);
   }
-  .header > p {
+  .header-subtitle {
     margin-top: 36px;
     font-size: 12px;
     letter-spacing: 0;
   }
-  .header > a {
+  .header-btn {
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 0;
@@ -45,11 +45,11 @@
 }
 
 @media (max-width: 768px) {
-  .header {
+  .header-inner {
     height: 62px;
     width: 100%;
   }
-  .header > img {
+  .header-logo {
     position: absolute;
     top: 25px;
     left: 10px;
@@ -58,7 +58,7 @@
     margin-top: 0;
     margin-right: 0;
   }
-  .header > p {
+  .header-subtitle {
     position: absolute;
     top: 8px;
     left: 10px;
@@ -66,10 +66,10 @@
     font-size: 10px;
     letter-spacing: 0;
   }
-  .header > a {
+  .header-btn {
     display: none;
   }
-  .header > div {
+  .header-btn-sp {
     display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -77,18 +77,18 @@
     padding: 9px 11px;
     width: 76px;
     height: 62px;
-    background-color: #DB6B64;
+    background-color: #db6B64;
     text-align: center;
   }
-  .header > div > img {
+  .header-btn-sp-icon {
     width: 20px;
   }
-  .header > div > a {
+  .header-btn-sp-text {
     display: block;
     font-family: "ヒラギノ角ゴ Pro W3";
     font-size: 12px;
     font-weight: 400;
-    color: white;
+    color: #ffffff;
     line-height: 1.6;
     letter-spacing: 1.5;
   }
