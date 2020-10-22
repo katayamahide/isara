@@ -5,7 +5,8 @@
     &-inner {
       width: calc(100% - 20px);
     }
-    &-subtitle {
+
+    &-tagline {
       margin-top: 36px;
       font-size: 12px;
       letter-spacing: 0;
@@ -19,142 +20,187 @@
       height: 41px;
       line-height: 41px;
     }
-  } 
+  }
 
-  .hero {
+  .mv {
     padding-top: 105px;
 
-    p {
-      font-size: 24px;
+    &-ttl {
+      @include font01-tb;
     }
 
-    h1 {
-      font-size: 16px;
+    &-txt {
+      @include font02-tb;
     }
   }
 
   .schedule {
     height: 461px;
-    font-size: 16px;
-    
-    span {
-      font-size: 14px;
+
+    &-txt {
+      @include font02-tb;
     }
 
-    a {
+
+    &-highlight {
+      font-size: 14px;
+      margin-bottom: 15px;
+
+    }
+
+    &-btn {
       margin: 0 auto;
       height: 77px;
       line-height: 77px;
       font-size: 18px;
     }
 
-    p:not(:first-child) {
+    &-term {
       font-size: 18px;
       letter-spacing: 0;
+    }
+  }
+
+  .freedom {
+
+    &-ttl {
+      @include font01-tb;
+    }
+
+    &-txt {
+      @include font02-tb;
     }
   }
 }
 
 @media (max-width: 768px) {
-.header {
-  &-inner {
-    height: 62px;
-    width: 100%;
-  }
-  &-logo {
-    position: absolute;
-    top: 25px;
-    left: 10px;
-    width: 90px;
-    height: auto;
-    margin-top: 0;
-    margin-right: 0;
-  }
-  &-subtitle{
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    margin-top: 0px;
-    font-size: 10px;
-    letter-spacing: 0;
-  }
-
-  &-btn {
-    display: none;
-    &-sp {
-      display: block;
-      box-sizing: border-box;
-      margin-left: auto;
-      padding: 9px 11px;
-      width: 76px;
+  .header {
+    &-inner {
       height: 62px;
-      background-color: $btn-color01;
-      text-align: center;
-      &-icon {
-        width: 20px;
-      }
-      &-text {
-        display: block;
-        font-family: "ヒラギノ角ゴ Pro W3";
-        font-size: 12px;
-        font-weight: 400;
-        color: #ffffff;
-        line-height: 1.6;
-        letter-spacing: 1.5;
+      width: 100%;
+    }
+
+    &-logo {
+      position: absolute;
+      top: 25px;
+      left: 10px;
+      width: 90px;
+      height: auto;
+
+      margin: {
+        top: 0;
+        right: 0;
       }
     }
+
+    &-tagline {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      margin-top: 0px;
+      font-size: 10px;
+      letter-spacing: 0;
+    }
+
+    &-btn {
+      display: none;
+
+      &-sp {
+        display: block;
+        box-sizing: border-box;
+        margin-left: auto;
+        padding: 9px 11px;
+        width: 76px;
+        height: 62px;
+        background-color: $color01;
+        text-align: center;
+
+        &-icon {
+          width: 20px;
+        }
+
+        &-text {
+          display: block;
+          font-family: "ヒラギノ角ゴ Pro W3";
+          font-size: 12px;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 1.6;
+          letter-spacing: 1.5;
+        }
+      }
+    }
+
+    &-bk {
+      height: 62px;
+    }
   }
-}
-  .hero {
-    margin-top: 62px;
+
+  .mv {
     height: 312px;
     background-image: url("../image/mainsp.jpg");
     padding-top: 18px;
 
-    p {
-      font-size: 18px;
+    &-ttl {
+      @include font01-sp;
       margin-bottom: 0;
     }
 
-    img {
+    &-img {
       width: 317px;
       margin-bottom: 40px;
       margin-top: 20px;
       margin-bottom: 38px;
     }
 
-    h1 {
+    &-txt {
       font-size: 15px;
-
-    }  
+    }
   }
 
   .schedule {
-    height: 510px;
-    font-size: 15px;
+    height: 512px;
     padding-top: 15px;
     padding-bottom: 15px;
 
-    span {
+    &-txt {
+      @include font02-sp;
+    }
+
+
+    &-highlight {
       font-size: 13px;
+      font-weight: 300;
       margin-bottom: 0;
     }
 
-    a {
+    &-btn {
       margin: 27px auto 10px;
       width: 90%;
       height: 93px;
       font-size: 20px;
-      line-height:1.6;
+      line-height: 1.6;
       padding-top: 16px;
+    }
+
+    &-term {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 26px;
+
     }
 
     .brsp {
       display: block;
     }
 
-    p:not(:first-child) {
-      font-size: 15px;
-    }
+    // .freedom {
+    //   &-ttl {
+    //     @include font01-sp;
+    //   }
+
+    //   &-txt {
+    //     @include font02-sp;
+    //   }
   }
 }

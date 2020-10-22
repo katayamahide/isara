@@ -1,12 +1,46 @@
 // color
-$btn-color01: #db6B64;
-$btn-color02: #d84940;
-$font-color01: #333333;
-$font-color02:#ebb94d;
-$font-color03: #ffffff;
-$bgc-color01: #ffffff;
-$bgc-color02: #ebb94d;
-
+$color01: #db6B64;
+$color02: #d84940;
+$color03: #333333;
+$color04:#ebb94d;
+$color05: #ffffff;
 
 // font-family
-$font-jp: "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+$font-jp: "Hiragino Kaku Gothic Pro W3",
+"Hiragino Kaku Gothic Pro",
+Meiryo,
+Osaka,
+"MS PGothic",
+sans-serif;
+
+// 関数
+@mixin font01 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+@mixin font02 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+}
+
+@mixin font01-tb {
+    font-size: 24px;
+}
+
+@mixin font02-tb {
+    font-size: 16px;
+}
+
+@mixin font01-sp {
+    font-size: 18px;
+}
+
+@mixin font02-sp {
+    font-size: 15px;
+    line-height: 1.6;
+}

@@ -9,104 +9,175 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-  line-height:1;
+  line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-  display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 nav ul {
-  list-style:none;
+  list-style: none;
 }
 
-blockquote, q {
-  quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content:'';
-  content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 
 a {
-  margin:0;
-  padding:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
   //追加
   text-decoration: none;
 }
 
 /* change colours to suit your needs */
 ins {
-  background-color:#ff9;
-  color:#000;
-  text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-  background-color:#ff9;
-  color:#000; 
-  font-style:italic;
-   font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
   text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-  border-bottom:1px dotted;
-  cursor:help;
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-  border-collapse:collapse;
-  border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-  display:block;
-  height:1px;
-  border:0;   
-  border-top:1px solid #cccccc;
-  margin:1em 0;
-  padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-input, select {
-  vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
 }
 
-* {
+body * {
   box-sizing: border-box;
 }
 
@@ -117,86 +188,101 @@ input, select {
   top: 0;
   right: 0;
   z-index: 10;
-  background-color: $bgc-color01;
+  background-color: $color05;
+
   &-inner {
     height: 75px;
     width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+
+    margin: {
+      left: auto;
+      right: auto;
+    }
+
     display: flex;
-    font-family: "Hiragino Kaku Gothic Pro W3";
+    font-family: $font-jp;
   }
+
   &-logo {
     display: block;
     width: 128px;
     height: 45px;
-    margin-top: 14px;
-    margin-right: 5px;
+
+    margin: {
+      top: 14px;
+      right: 5px;
+    }
   }
-  &-subtitle {
+
+  &-tagline {
     display: block;
     margin-top: 35px;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.6;
     letter-spacing: 1.5px;
-    color: $font-color01;
+    color: $color03;
   }
+
   &-btn {
     display: block;
     margin-top: 16px;
     margin-left: auto;
     text-align: center;
-    background-color: $btn-color01;
+    background-color: $color01;
     width: 318px;
     height: 44px;
     line-height: 44px;
     border-radius: 25px;
-    color: $bgc-color01;
+    color: $color05;
     font-size: 14px;
     letter-spacing: 1.5px;
+
     &:hover {
-        background-color: $btn-color01;
+      background-color: $color02;
     }
+
     &-sp {
       display: none;
     }
   }
+
+  &-bk {
+    height: 75px;
+  }
 }
-        
-//  ヒーロー
-.hero {
-  text-align: center;
+
+
+//  メインビジュアル
+.mv {
   height: 500px;
+  text-align: center;
   width: 100%;
-  margin-top: 75px;
   padding-top: 95px;
+
   background: {
     image: url("../image/main.jpg");
     repeat: no-repeat;
     size: cover;
     position: center;
-  }
-  p {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
-    line-height: 1.6;
-    color: $font-color01;
+
   }
 
-  img {
+  &-ttl {
+    @include font01;
+    margin-bottom: 10px;
+    color: $color03;
+  }
+
+  &-img {
     width: 317px;
     margin-bottom: 40px;
   }
 
-  h1 {
-    font-size: 20px;
-    font-weight: 600;
-    color: $font-color01;
+  &-txt {
+    @include font02;
     line-height: 1.1;
-    letter-spacing: 1.5px;
+    color: $color03;
   }
 }
 
@@ -204,62 +290,142 @@ input, select {
 .schedule {
   height: 602px;
   width: 100%;
-  background-color: $bgc-color02;
+  background-color: $color04;
   text-align: center;
-  color: $font-color03;
+  color: $color05;
   font-family: $font-jp;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.6;
-  letter-spacing: 1.5px;
-  padding: 30px 0;
 
-  span {
-    display: inline-block;
-    font-family: "Menlo";
-    color: #c7254e;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #f9f2f4;
-    border-radius: 4px;
-    line-height: 1.6;
-    letter-spacing: 1.5px;
-    padding: 2px 4px;
-    // width: 462px;
-    margin-top: 10px;
+
+  padding: {
+    top: 30px;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+  }
+
+  &-txt {
+    @include font02;
     margin-bottom: 10px;
   }
 
-  a {
+  &-highlight {
+    display: inline-block;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: #c7254e;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f9f2f4;
+    letter-spacing: 1.5px;
+    padding: 2px 4px;
+    margin-bottom: 55px;
+  }
+
+  &-btn {
     display: block;
-    margin: 45px auto;
+
+    margin: {
+      left: auto;
+      right: auto;
+    }
+
     font-size: 28px;
-    color: $font-color03;
+    font-weight: 600;
+    color: $color05;
     line-height: 104px;
     letter-spacing: 1.5px;
     width: 84%;
     max-width: 1028px;
     height: 104px;
+    margin-bottom: 70px;
     border-radius: 50px;
-    background-color: $btn-color01;
+    background-color: $color01;
+
     &:hover {
-      background-color: $btn-color02;
+      background-color: $color02;
     }
   }
 
-  .brsp {
-    display: none;
-  }
-
-  p:not(:first-child) {
+  &-term {
     margin-top: 23px;
-    margin-bottom: 33px;
+    margin-bottom: 44px;
     font-size: 21px;
+    font-weight: 600;
     letter-spacing: 1.5px;
-    line-height: 1.6;
+
   }
 
   .sns {
     margin-top: 28px;
   }
+}
+
+// freedom
+.freedom {
+  width: 100%;
+  height: 585px;
+  text-align: center;
+  padding-top: 40px;
+
+  background: {
+    image: url("../image/introbottom.jpg");
+    position: center;
+    size: cover;
+  }
+
+  &-ttl {
+    position: relative;
+    max-width: 860px;
+    height: 100px;
+    color: $color03;
+
+    margin: {
+      bottom: 40px;
+      left: auto;
+      right: auto;
+    }
+
+    @include font01;
+    line-height:100px;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 50px;
+      width: 50px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 5px solid $color04;
+      border-left: 5px solid $color04;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 5px solid $color04;
+      border-right: 5px solid $color04;
+    }
+
+  }
+
+  &-txt {
+    @include font02;
+    font-weight: 300;
+
+  }
+
+  &-underline {
+    background: linear-gradient(transparent 70%, $color04 70%);
+    font-weight: 600;
+  }
+
+}
+
+.brsp {
+  display: none;
 }
