@@ -64,6 +64,7 @@
   .freedom {
 
     &-ttl {
+      width: calc(100% - 30px);
       @include font01-tb;
     }
 
@@ -190,17 +191,29 @@
 
     }
 
-    .brsp {
-      display: block;
+  }
+
+  .freedom {
+    background: {
+      position: bottom;
+      size: contain;
+      repeat: no-repeat;
     }
 
-    // .freedom {
-    //   &-ttl {
-    //     @include font01-sp;
-    //   }
+    &-ttl {
+      @include font01-sp;
+      line-height: 40px;
+      height: 124px;
+      padding-top: 30px;
+    }
 
-    //   &-txt {
-    //     @include font02-sp;
-    //   }
+    &-txt {
+      @include font02-sp;
+    }
+  }
+
+
+  .brsp {
+    display: block;
   }
 }

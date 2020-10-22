@@ -46,6 +46,7 @@
     letter-spacing: 0;
   }
   .freedom-ttl {
+    width: calc(100% - 30px);
     font-size: 24px;
   }
   .freedom-txt {
@@ -149,7 +150,22 @@
     line-height: 1.6;
     margin-bottom: 26px;
   }
-  .schedule .brsp {
+  .freedom {
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .freedom-ttl {
+    font-size: 18px;
+    line-height: 40px;
+    height: 124px;
+    padding-top: 30px;
+  }
+  .freedom-txt {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .brsp {
     display: block;
   }
 }
