@@ -72,8 +72,31 @@
       @include font02-tb;
     }
   }
+
+  .about {
+
+    &-txt {
+      @include font02-tb;
+    }
+
+    &-ttl {
+      width: calc(100% - 30px);
+
+      @include font01-tb;
+    }
+
+    &-box {
+      width: calc(100% - 40px);
+
+      &-ttl {
+        @include font02-tb;
+      }
+    }
+  }
+
 }
 
+// スマホ用レイアウト
 @media (max-width: 768px) {
   .header {
     &-inner {
@@ -214,8 +237,60 @@
     }
   }
 
-
   .brsp {
     display: block;
   }
+
+  .about {
+    height: 630px;
+
+    &-tag {
+      width: 60px;
+      height: 60px;
+      font-size: 12px;
+      line-height: 60px;
+      top: -30px;
+    }
+
+    &-txt {
+      @include font02-sp;
+    }
+
+    &-ttl {
+      @include font01-sp;
+      line-height: 2.1;
+      margin-bottom: 20px;
+
+      &::before,
+      &::after {
+        content: "";
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    &-box {
+      padding-top: 13px;
+      width: calc(100% - 40px);
+
+      &-ttl {
+        @include font02-sp;
+        margin-bottom: 20px;
+      }
+
+      &-inner {
+        &-skill {
+          font-size: 12px;
+          width: 120px;
+        }
+
+        &-img {
+          height: 30px;
+        }
+      }
+
+
+    }
+  }
+
 }

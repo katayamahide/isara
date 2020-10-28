@@ -52,6 +52,19 @@
   .freedom-txt {
     font-size: 16px;
   }
+  .about-txt {
+    font-size: 16px;
+  }
+  .about-ttl {
+    width: calc(100% - 30px);
+    font-size: 24px;
+  }
+  .about-box {
+    width: calc(100% - 40px);
+  }
+  .about-box-ttl {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -168,6 +181,46 @@
   }
   .brsp {
     display: block;
+  }
+  .about {
+    height: 630px;
+  }
+  .about-tag {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    line-height: 60px;
+    top: -30px;
+  }
+  .about-txt {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .about-ttl {
+    font-size: 18px;
+    line-height: 2.1;
+    margin-bottom: 20px;
+  }
+  .about-ttl::before, .about-ttl::after {
+    content: "";
+    height: 30px;
+    width: 30px;
+  }
+  .about-box {
+    padding-top: 13px;
+    width: calc(100% - 40px);
+  }
+  .about-box-ttl {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .about-box-inner-skill {
+    font-size: 12px;
+    width: 120px;
+  }
+  .about-box-inner-img {
+    height: 30px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

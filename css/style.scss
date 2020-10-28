@@ -109,6 +109,10 @@ nav ul {
   list-style: none;
 }
 
+ul {
+  list-style: none;
+}
+
 blockquote,
 q {
   quotes: none;
@@ -428,4 +432,125 @@ body * {
 
 .brsp {
   display: none;
+}
+
+.about {
+  position: relative;
+  height: 620px;
+  max-width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color06;
+  color: $color03;
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  &-tag {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: $color04;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 80px;
+    color: $color05;
+  }
+
+  &-ttl {
+    position: relative;
+    max-width: 860px;
+    height: 140px;
+
+    margin: {
+      top: 40px;
+      bottom: 40px;
+      left: auto;
+      right: auto;
+    }
+
+    padding-top: 35px;
+
+    @include font01;
+
+
+    &::before,
+    &::after {
+      content: "";
+      height: 50px;
+      width: 50px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 5px solid $color04;
+      border-left: 5px solid $color04;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 5px solid $color04;
+      border-right: 5px solid $color04;
+    }
+
+  }
+
+  &-txt {
+    @include font02;
+    margin-bottom: 35px;
+  }
+
+  &-box {
+    height: auto;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    background-color: $color05;
+    border: 3px solid $color04;
+    border-radius: 3px;
+
+    &-ttl {
+      @include font02;
+      margin-bottom: 25px;
+    }
+
+    &-inner {
+      display: flex;
+      max-width: 800px;
+      margin-right: auto;
+      margin-left: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+
+      &-img {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+
+      &-skill {
+        height: auto;
+        width: 150px;
+        font-size: 12px;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+
 }
